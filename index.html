@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analizador SEO</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Analizador SEO</h1>
+            <h3>Desarrollado por Eduardo Núñez</h3>
+        </header>
+        <main>
+            <div class="analysis-form">
+                <input type="url" id="urlInput" placeholder="Ingrese la URL a analizar" required>
+                <button id="analyzeBtn">Analizar</button>
+            </div>
+            <div class="results-container" id="resultsContainer">
+                <div class="score-overview hidden" id="scoreOverview">
+                    <h2>Puntuación General</h2>
+                    <div class="score-circle">
+                        <span id="totalScore">0</span>/100
+                    </div>
+                </div>
+                <div class="metrics-grid hidden" id="metricsGrid">
+                    <div class="metric-card">
+                        <h3>Meta Tags</h3>
+                        <div class="metric-score" id="metaScore">0/100</div>
+                        <ul class="metric-details" id="metaDetails"></ul>
+                    </div>
+                    <div class="metric-card">
+                        <h3>Estructura de Contenido</h3>
+                        <div class="metric-score" id="structureScore">0/100</div>
+                        <ul class="metric-details" id="structureDetails"></ul>
+                    </div>
+                    <div class="metric-card">
+                        <h3>Optimización Móvil</h3>
+                        <div class="metric-score" id="mobileScore">0/100</div>
+                        <ul class="metric-details" id="mobileDetails"></ul>
+                    </div>
+                    <div class="metric-card">
+                        <h3>Velocidad de Carga</h3>
+                        <div class="metric-score" id="speedScore">0/100</div>
+                        <ul class="metric-details" id="speedDetails"></ul>
+                    </div>
+                    <div class="metric-card">
+                        <h3>Enlaces</h3>
+                        <div class="metric-score" id="linksScore">0/100</div>
+                        <ul class="metric-details" id="linksDetails"></ul>
+                    </div>
+                    <div class="metric-card">
+                        <h3>Palabras Clave</h3>
+                        <div class="metric-score" id="keywordsScore">0/100</div>
+                        <ul class="metric-details" id="keywordsDetails"></ul>
+                    </div>
+                    <div class="metric-card">
+                        <h3>Redes Sociales</h3>
+                        <div class="metric-score" id="socialScore">0/100</div>
+                        <ul class="metric-details" id="socialDetails"></ul>
+                    </div>
+                    <div class="metric-card">
+                        <h3>Seguridad</h3>
+                        <div class="metric-score" id="securityScore">0/100</div>
+                        <ul class="metric-details" id="securityDetails"></ul>
+                    </div>
+                </div>
+                <div class="export-section hidden" id="exportSection">
+                    <button id="exportCSV">Exportar a CSV</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
